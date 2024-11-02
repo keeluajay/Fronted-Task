@@ -3,7 +3,6 @@ let products = [];
 let currentPage = 1;
 const productsPerPage = 5;
 
-// Fetch and display products
 async function fetchProducts() {
   const response = await fetch(apiUrl);
   products = await response.json();
@@ -76,7 +75,6 @@ function toggleProductForm() {
   form.style.display = form.style.display === 'none' ? 'block' : 'none';
 }
 
-// Placeholder functions for editing and deleting
 function editProduct(id) {
   alert(`Editing product with ID: ${id}`);
 }
